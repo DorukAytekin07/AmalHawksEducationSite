@@ -1,0 +1,28 @@
+*{
+    font-family: monospace;
+}
+.main-section{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: xx-large;
+    text-align: center;
+    color: #F8F9FA;
+    padding-left: 2px;
+}
+.table-data{
+    font-size: xx-large;
+    color: #F8F9FA;
+    box-sizing: border-box;
+    border: #F8F9FA solid 1px;
+}
+td{
+    display: table-cell;
+    padding: 0.5rem;
+    vertical-align: middle;
+    width: fit-content;
+}
+
