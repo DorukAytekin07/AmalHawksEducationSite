@@ -2,20 +2,175 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=10">
     <link rel="shortcut icon" href="/img/sitelogo.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/parcalar.css">
     <title>Education Site Components</title>
 </head>
 <body>
     <nav class="side-nav">
         <a href="homepage.html"><img class="side-nav-img" src="/img/anasayfabuton.avif" alt="Amal Hawks Logo"></a>
         <a class="side-nav-a" href="frc.html">FRC</a>
-        <a class="side-nav-a" href="yazılım.html">Yazılım</a>
+        <a class="side-nav-a" href="yazilim.html">Yazilim</a>
         <a class="side-nav-a" href="mekanik.html">Mekanik</a>
-        <a class="side-nav-a" href="tasarım.html">Tasarım</a>
-        <a class="side-nav-a" href="pnömatik.html">Pnömatik</a>
+        <a class="side-nav-a" href="tasarim.html">Tasarim</a>
+        <a class="side-nav-a" href="pnomatik.html">Pnomatik</a>
         <a class="side-nav-a" href="elektronik.html">Elektronik</a>
     </nav>
+    <div class="begin">
+        <div>
+            <h1 class="title">FRC Elekronik Parcalar</h1>
+            <p class="p">Bu Sayfada frcde kullanilan elektronik parcalra kisa bi degincez 
+                frcde parca ureten en onemli 2 sirket REV ve CTRE ve baglanti semalarida 
+                REV tipi baglanti ve CTRE tipi baglanti olarak ikiye ayriliyo 
+                biz 2 semayada deginicez ve her parcanin tanitimini yapicaz</p>
+        </div>
+        
+        <div class="roborio">
+            <a class="a" href="https://www.andymark.com/products/ni-roborio-2?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMnJvYm9yaW8lMjIlMkMlMjJ1dGY4JTIyJTNBJTIyJUUyJTlDJTkzJTIyJTdE" target="_blank" >
+                <h2 class="title">NI Roborio</h2>
+            </a>
+            <a href="/img/Roborio.png"><img class="images" src="/img/Roborio.png" alt="Frc Roborio"></a>
+            <p class="p">Roborio Frc icin kullanilan ana robot kontrol cihazidir diger tum donanimlara komut verir robotun beyni olarak gorev gorur</p>
+        </div>
+
+        <div class="pdp">
+            <a class="a" href="https://www.andymark.com/products/power-distribution-panel?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMnBkcCUyMiUyQyUyMnV0ZjglMjIlM0ElMjIlRTIlOUMlOTMlMjIlN0Q" target="_blank" >
+                <h2 class="title">CTRE Power Distribution Panel(PDP)</h2>
+            </a>
+            <a href="/img/CTRE PDP.png"><img class="images" src="/img/CTRE PDP.png" alt="Frc Roborio"></a>
+            <p class="p">CTRE PDP otomatik sifirlamali devre kesiciler ve az sayida 
+                ozel fonksiyonlu sigortali baglanti araciligiyla 
+                gucu 12VDC akuden robot bilesenlerine aktarmakta kullanilir PDP 40A surekli akim icin derecelendirilmis 8 cikis cifti 
+                ve 30A surekli akim icin derecelendirilmis 8 cift saglar
+                PDP roboRIO icin ozel 12V konektorlerin yani sira Voltaj Regulator Modulu ve Pnomatik Kontrol 
+                Modulu icin konektorler saglar Ayrica akimi sicakligi ve 
+                aku voltajini kaydetmek icin bir CAN arayuzu icerir Daha ayrintili bilgi icin <a target="_blank" class="a" href="/pdf/PDP User Guidepdf">PDP Kullanim Kilavuzuna Burdan Bakabilirsiniz</a></p>
+        </div>
+        <div class="pdh">
+            <a class="a" href="https://www.revrobotics.com/rev-11-1850/" target="_blank" ><h2 class="title">REV Power Distribution Hub(PDH)</h2></a>
+            <a href="/img/REV PDH.png"><img class="images" src="/img/REV PDH.png" alt="Frc Roborio"></a>
+            <p class="p"><a class="a" target="_blank" href="https://docs.revrobotics.com/rev-11-1850/" target="_blank">
+                REV Guc Dagitim Merkezi(PDH)</a> gucu 12VDC akuden 
+                cesitli robot bilesenlerine dagitmak icin kullanilir
+                PDH de 20 yuksek akim (maks 40A) kanal
+                3 dusuk akim (maks 15A) ve 1 degistirilebilir dusuk akim kanali bulunur 
+                Guc Dagitim Merkezi aletsiz kilitlemeli WAGO terminallerine 
+                bir LED voltaj ekranina ve gercek zamanli telemetri icin CAN veya 
+                USB-C uzerinden REV Donanim İstemcisine baglanma ozelligine sahiptir 
+                2022 yilindan itibaren Yeni baslayan rookie takimlara bu guc dagiticidan verilmektedir</p>
+        </div>
+        <div class="vrm">
+            <a class="a" href="https://store.ctr-electronics.com/voltage-regulator-module/" target="_blank" ><h2 class="title">CTRE Voltage Regulator Module(VRM)</h2></a>
+            <a href="/img/VRM.png"><img class="images" src="/img/VRM.png" alt="Frc Roborio"></a>
+            <p class="p">CTRE Voltaj Regulator Modulu(VRM) 12 voltla calisan bagimsiz bir moduldur 
+                Cihaz PDPdeki ozel bir konnektore baglanir
+                Modulun birden fazla regule edilmis 12V ve 5V cikisi vardir 
+                VRM nin amaci robot radyosu ozel devreler ve 
+                IP gorus kameralari icin duzenlenmis guc saglamaktir 
+                Daha fazla bilgi icin <a target="_blank" class="a" href="/pdf/VRM User's Guidepdf">VRM Kullanim Kilavuzuna Burdan Ulasabilirsiniz</a> </p>
+        </div>
+        <div class="rpm">
+            <a class="a" href="https://www.revrobotics.com/rev-11-1856/" target="_blank" ><h2 class="title">REV Radio Power Module(RPM)</h2></a>
+            <a href="/img/RPM.png"><img class="images" src="/img/RPM.png" alt="Frc Roborio"></a>
+            <p class="p"><a class="a" href="https://docs.revrobotics.com/rev-11-1856/" target="_blank">
+                REV Radyo Guc Modulu</a> en kritik sistem bilesenlerinden 
+                biri olan OpenMesh WiFi radyoyu rekabetin en zorlu anlarinda gucunu korumak 
+                icin tasarlanmistir Radyo Guc Modulu radyoya geleneksel bir varil 
+                guc girisi araciligiyla guc verilmesi ihtiyacini ortadan kaldirir 
+                İki soketli RJ45 konnektorlu 18V Pasif POE yi kullanan Radyo Guc Modulu 
+                radyo ile roboRIO arasinda sinyal gecirirken dogrudan radyoya guc saglar 
+                Radyo ve roboRIOyu bagladiktan sonra renk kodlu dugme 
+                WAGO terminallerini kullanarak Guc Dagitim Hubindaki dusuk akim kanallarina 
+                kablolayarak Radyo Guc Modulune kolayca guc ekleyin 
+                ve buda 2022 yilindan itibaren rookie takimlara verilmektedir</p>
+        </div>
+        <div class="OM5P-AC">
+            <a class="a" href="https://www.andymark.com/products/open-mesh-om5p-ac-dual-band-1-17-gbps-access-point-radio?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMnJhZGlvJTIyJTJDJTIydXRmOCUyMiUzQSUyMiVFMiU5QyU5MyUyMiU3RA" target="_blank">
+                <h2 class="title">Open Mesh OM5P-AC Radyo</h2>
+            </a>
+            <a  href="/img/OM5P-AC.png"><img class="images" src="/img/OM5P-AC.png" alt="Frc OM5P-AC Radio"></a>
+            <p class="p">Robota kablosuz iletisim islevselligi saglamak icin robot radyosu olarak 
+                OpenMesh OM5P-AC kablosuz radyo kullanilir
+                Cihaz evde kullanilmak uzere bir dizustu bilgisayarin dogrudan baglanmasi 
+                icin Erisim Noktasi olarak yapilandirilabilir Ayrica sahada kullanilmak 
+                uzere kopru olarak da yapilandirilabilir Robot radyosuna 
+                VRM uzerindeki 12V/2A cikislarindan biri tarafindan guc verilmeli ve 
+                Ethernet uzerinden roboRIO denetleyicisine baglanilmalidir 
+                artik kullanilmayan OM5P-AN diye bi kardeside vardir ama bu artik satilmiyo yada verilmiyo</p>
+        </div>
+        <div class="CB">
+            <a class="a" href="https://www.andymark.com/products/120-amp-breaker?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMjEyMGElMjIlMkMlMjJ1dGY4JTIyJTNBJTIyJUUyJTlDJTkzJTIyJTdE" target="_blank" >
+                <h2 class="title">120A Devre Kesici</h2>
+            </a>
+            <a href="/img/CB.png"><img class="images" src="/img/CB.png" alt="Frc Circuit Breaker"></a>
+            <p class="p">120A Ana Devre Kesici robot uzerinde iki gorevi yerine getirir 
+                ana robot guc anahtari ve asagi yondeki robot kablolari ve 
+                bilesenleri icin bir koruma cihazi 120A devre kesici 
+                robot akusunun ve Guc Dagitim kartlarinin pozitif terminallerine baglanir</p>
+        </div>
+        <div class="DK">
+            <a class="a" href="https://www.andymark.com/products/snap-action-breakers?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMmJyZWFrZXJzJTIyJTJDJTIydXRmOCUyMiUzQSUyMiVFMiU5QyU5MyUyMiU3RA&quantity=1" target="_blank" rel="noopener noreferrer">
+                <h2 class="title">Devre Kesiciler</h2>
+            </a>
+            <a href="/img/DK.png"><img class="images" src="/img/DK.png" alt="Frc Devre Kesiciler"></a>
+            <p class="p">Snap Action devre kesiciler bransman devrelerine giden akimi sinirlamak 
+                icin Guc Dagitim Paneliyle birlikte kullanilir 
+                Bu devre kesicilerdeki degerler surekli akim icindir 
+                gecici tepe degerleri oldukca yuksek olabilir</p>
+        </div>
+        <div class="Aku">
+            <a class="a" href="https://www.revrobotics.com/rev-19-2487/" target="_blank" ><h2 class="title">Aku</h2></a>
+            <a href="/img/Aku.png"><img class="images" src="/img/Aku.png" alt="Frc Aku"></a>
+            <p class="p">Bir FRC robotunun guc kaynagi bir FRC robotunun yuksek akim taleplerini 
+                karsilayabilen tek bir 12V 18Ah Kapali Kursun Asit(SLA) akudur</p>
+        </div>
+        <div class="RSL">
+            <a class="a" href="https://www.andymark.com/products/robot-signal-light?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMnJzbCUyMiUyQyUyMnV0ZjglMjIlM0ElMjIlRTIlOUMlOTMlMjIlN0Q" 
+            target="_blank" ><h2 class="title">Robot Signal Led(RSL)</h2></a>
+            <a href="/img/RSL.png"><img class="images" src="/img/RSL.png" alt="Frc Aku"></a>
+            <p class="p">Robot Sinyal Isiginin (RSL) Allen-Bradley 855PB-B12ME522 veya AndyMark am-3583 olmasi 
+                gerekir Dogrudan roboRIO tarafindan kontrol edilir ve etkinlestirildiginde 
+                yanip soner ve devre disi birakildiginda sabit kalir</p>
+        </div>
+        <div class="PCM">
+            <a class="a" href="https://store.ctr-electronics.com/pneumatic-control-module/" target="_blank"><h2 class="title">CTRE Pneumatics Control Module(PCM)</h2></a>
+            <a href="/img/PCM.png"><img class="images" src="/img/PCM.png" alt="Frc Aku"></a>
+            <p class="p">CTRE Pnomatik Kontrol Modulu (PCM) 12V veya 24V pnomatik solenoidleri 
+                ve yerlesik kompresoru calistirmak icin gereken tum giris ve cikislari icerir 
+                PCM basinc sensoru icin bir giris icerir ve robot etkinlestirildiginde 
+                ve kodda bir solenoid olusturuldugunda kompresoru otomatik olarak kontrol eder 
+                 <a class="a" href="/pdf/PCM User's Guide.pdf" target="_blank" >Daha fazla bilgi icin PCM Kullanim Kilavuzuna bakin</a></p>
+        </div>
+        <div class="PH">
+            <a class="a" href="https://www.revrobotics.com/rev-11-1852/" target="_blank" ><h2 class="title">REV Pneumatics Hub(PH)</h2></a>
+            <a href="/img/REV PH.png"><img class="images" src="/img/REV PH.png" alt="Frc Aku"></a>
+            <p class="p">REV Pnomatik Hub hem 12V hem de 24V pnomatik solenoid valfleri 
+                degistirebilen bagimsiz bir moduldur Pnomatik Hub 16ya kadar tek etkili solenoide 
+                8 cift etkili solenoide veya iki tipin bir kombinasyonuna 
+                izin veren 16 solenoid kanalina sahiptir Kullanici tarafindan secilebilen 
+                cikis voltaji tamamen duzenlenir ve robot pili 4,75Va dustugunde 12V 
+                solenoidlerin bile aktif kalmasina olanak tanir Pnomatik sistemin 
+                esnekligini ve geri bildirim islevselligini artiran 
+                dijital ve analog basinc sensoru baglanti noktalari cihaza yerlestirilmistir 
+                Hubdaki USB-C baglantisi REV Donanim İstemcisi ile birlikte 
+                calisarak kullanicilarin ek bir robot kontrolorune ihtiyac duymadan 
+                pnomatik sistemleri test etmesine olanak tanir</p>
+        </div>
+    <div>
+        <h2 class="title">REV Malzemeleri ile Kablolama</h2>
+        <a href="/img/REV_WIRING.svg" target="_blank" ><img class="images" src="/img/REV_WIRING.svg" alt="Rev Wiring"></a>
+    </div>
+    <div>
+        <h2 class="title">CTRE Malzemeleri ile Kablolama</h2>
+        <a href="/img/CTRE_WIRING.svg" target="_blank" ><img class="images" src="/img/CTRE_WIRING.svg" alt="Rev Wiring"></a>
+    </div>
+    <footer class="hiddeny footer">
+        
+        <img class="footer-img" src="/img/anasayfabuton.avif" alt="team 7611 Logo">
+    </footer>
+    </div>
+    
 </body>
 </html>

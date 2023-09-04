@@ -6,6 +6,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 21vw;
+    align-content: center;
+}
+.guide{
+    position: absolute;
+    top: 20%;
+    /*margin-top: 20vh;*/
 }
 .title{
     font-size: xx-large;
