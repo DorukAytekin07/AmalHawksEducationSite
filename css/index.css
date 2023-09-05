@@ -14,9 +14,9 @@
     margin-left: 21vw;
 }
 .images{
-    display: block;
-    object-fit: cover;
-    margin-left: 35vw;
+    display:block;
+    object-fit: contain;
+    margin-left: 33vw;
     margin-right: auto;
     margin-bottom: 10px;
     width:50%;
@@ -29,10 +29,8 @@
       border-right-color:#111;
       border-top-color:#222;
       box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
-      box-sizing:border-box;
       padding-bottom: 3px;
       padding-left: 2px;
-      
   }
 .a:visited,.a:active,.a:link{
     color: #F8F9FA;
