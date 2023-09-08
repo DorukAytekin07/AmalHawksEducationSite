@@ -19,7 +19,71 @@
         <a class="side-nav-a" href="elektronik.html">Elektronik</a>
     </nav>
     <div>
-        
+        <div>
+            <h1 class="title">Ivmeolcerler - Hardware</h1>
+            <p class="p">
+                İvmeölçerler ivmeyi ölçmek için kullanılan yaygın sensörlerdir. 
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Prensip olarak, hassas ivme ölçümleri çift entegre edilebilir ve konumu izlemek için 
+                kullanılabilir (bir jiroskoptan dönüş hızı ölçümünün rotayı belirlemek için nasıl 
+                entegre edilebileceğine benzer şekilde) - ancak pratikte, yasal FRC kapsamında 
+                mevcut olan ivmeölçerlerin fiyat aralığı bu kullanım için neredeyse doğru değildir. 
+                Ancak ivmeölçerler FRC'deki bazı görevler için hala kullanışlıdır.
+            </p>                    
+            <p class="p" style="margin-top: 2vw;">
+                RoboRIO, 
+                tüm ekiplerin kullanabileceği yerleşik bir üç eksenli ivmeölçerle birlikte gelir; 
+                ancak daha hassas ölçümler arayan ekipler ayrıca çevresel bir ivmeölçer satın alıp 
+                kullanabilir.
+            </p>                           
+        </div>
+        <div>
+            <h2 class="title">Ivmeolcer Turleri</h2>
+            <p class="p">FRC'de yaygın olarak kullanılan üç tip ivmeölçer vardır: tek eksenli ivmeölçerler, çok eksenli ivmeölçerler ve IMU'lar.</p>
+        </div>
+        <div>
+            <h2 class="title">1 Eksenli Ivmeolcerler</h2>
+            <img class="images" src="/img/1d ivmeolcer.svg" alt="1d ivmeolcerler">
+            <p class="p">
+                Tek eksenli ivmeölçerler, adlarından da anlaşılacağı gibi, tek eksen boyunca ivmeyi 
+                ölçer. Bu eksen genellikle fiziksel cihaz üzerinde belirtilir ve cihazın istenen 
+                eksenin ölçülebilmesi için doğru yönde monte edilmesi son derece önemlidir. 
+                Tek eksenli ivmeölçerler genellikle ölçülen ivmeye karşılık gelen bir analog voltaj 
+                üretir ve böylece roboRIO'nun analog giriş bağlantı noktalarına bağlanır
+            </p>
+        </div>
+        <div>
+            <h2 class="title">Cok Eksenli Ivmeolcerler</h2>
+            <img class="images" src="/img/3d ivmeolcer.svg" alt="3d ivmeolcerler">
+            <p class="p">
+                Çok eksenli ivmeölçerler birden fazla uzaysal eksen boyunca ivmeyi ölçer. 
+                RoboRIO'nun yerleşik ivmeölçeri üç eksenli bir ivmeölçerdir.
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Çevresel çok eksenli ivmeölçerler basitçe birden fazla analog voltajın çıktısını 
+                verebilir ve böylece analog giriş bağlantı noktalarına bağlanabilir veya 
+                (daha yaygın olarak) roboRIO'nun seri veri yollarından biriyle iletişim kurabilirler
+            </p>
+        </div>
+        <div>
+            <h2 class="title">RoboRio Yerlesik Ivmeolcer</h2>
+            <img class="images" src="/img/builtin ivmeolcer.svg" alt="Roborio accelerometer">
+            <p class="p">
+                RoboRIO'da herhangi bir harici bağlantıya ihtiyaç duymayan yerleşik bir ivmeölçer bulunur
+            </p>
+            
+        </div>
+        <div>
+            <h2 class="title">IMU(Inertial Measurement Units)</h2>
+            <img class="images" src="/img/imu.svg" alt="Roborio accelerometer">
+            <p class="p">
+                Birçok popüler FRC cihazı ("atalet ölçüm birimleri" veya "IMU'lar" olarak bilinir) hem ivmeölçer hem de jiroskopu birleştirir
+            </p>
+        </div>
+        <footer class="hiddeny footer">
+            <img class="footer-img" src="/img/anasayfabuton.avif" alt="team 7611 Logo">
+        </footer>
     </div>
 </body>
 </html>

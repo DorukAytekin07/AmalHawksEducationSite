@@ -19,7 +19,201 @@
         <a class="side-nav-a" href="elektronik.html">Elektronik</a>
     </nav>
     <div>
-        
+        <div>
+            <h1 class="title">Encoders - Hardware</h1>
+            <p class="p">
+                encoderlar, FRC'de dönme hareketini ölçmek için açık ara en yaygın 
+                yöntemdir ve bunun iyi bir nedeni vardır: ucuz, kullanımı kolay ve güvenilirdirler. 
+                Dijital sinyal ürettikleri için analog cihazlara (potansiyometre gibi) göre 
+                gürültüye ve parazite daha az eğilimlidirler
+            </p>
+        </div>
+        <div>
+            <h2 class="title">Kodlayici Turleri</h2>
+            <p class="p">
+                FRC'de genellikle kullanılan encoder fiziksel olarak bağlanmasının üç ana yolu vardır:
+            </p>
+            <ul class="p">
+                <li style="margin-left: 2vw;"><a class="a" href="#sahft">Saftli Encoderlar</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="#onsahft">Saft Ustu Encoderlar</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="#manyetik">Manyetik Encoderlar</a></li>
+            </ul>
+            <p class="p" style="margin-top: 2vw;">
+                Bu encoderlar, söz konusu mekanizmaya nasıl monte edildiklerine göre farklılık 
+                gösterir. Bu tür encoderlara ek olarak birçok FRC mekanizması, tasarımlarına 
+                entegre edilmiş karesel encoderlarla birlikte gelir
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Ayrıca FRC'de tipik olarak kullanılan encoder verilerinin iletilmesinin üç ana yolu vardır:
+            </p>
+            <ul class="p">
+                <li style="margin-left: 2vw;"><a class="a" href="#dortlu">Dortlu Encoderlar</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="#gorevdongusu">Gorev Dongusu Encoderlar</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="#analog">Analog Encoderlar</a></li>
+            </ul>
+        </div>
+        <div id="sahft">
+            <h2 class="title">Saftli Encoderlar</h2>
+            <img class="images" src="/img/shaft.svg" alt="frc shaft encoders">
+            <p class="p">
+                Şaftlı enkoderler, bir mekanizmaya dönel olarak bağlanması gereken, 
+                dışarı çıkan bir şafta sahip, sızdırmaz bir gövdeye sahiptir. Bu genellikle sarmal 
+                bir kiriş bağlantısıyla veya daha ucuz bir şekilde, her iki ucundan da kablo bağları 
+                ve/veya yapıştırıcıyla tutturulmuş esnek bir boru (cerrahi boru veya pnömatik boru 
+                gibi) uzunluğuyla yapılır. Birçok ticari kullanıma hazır FRC dişli kutusu, şaftlı 
+                enkoderler için özel olarak tasarlanmış montaj noktalarına sahiptir.
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Şaftlı Encoder örnekleri:
+            </p>
+            <ul class="p">
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.digikey.com/en/products/detail/63R256/GH3070-ND/304479?WT.z_cid=ref_netcomponents_dkc_buynow&utm_source=netcomponents&utm_medium=aggregator&utm_campaign=buynow" target="_blank">Grayhill 63r</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.usdigital.com/products/encoders/absolute/shaft/ma3/" target="_blank">US Digital MA3</a></li>
+            </ul>
+        </div>
+        <div id="onsahft">
+            <h2 class="title">Saft Ustu Encoderlar</h2>
+            <img class="images" src="/img/onshaft.svg" alt="frc shaft encoders">
+            <p class="p">
+                Şaft üzeri enkoderler, şaftın etrafına takılarak şafta bağlanır ve şaft ile enkoderin 
+                içindeki dönen göbek arasında bir sürtünme bağlantısı oluşturur.
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Şaft Uzeri Encoder örnekleri:
+            </p>
+            <ul class="p">
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.cuidevices.com/product/motion-and-control/rotary-encoders/incremental/modular/amt10-v-kit/amt103-v" target="_blank">AMT103-V</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.revrobotics.com/rev-11-1271/" target="_blank">Rev Through Bore Encoder</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.andymark.com/products/e4t-oem-miniature-optical-encoder-kit" target="_blank">US Digital E4T</a></li>
+            </ul>
+        </div>
+        <div id="manyetik">
+            <h2 class="title">Manyetik Encoderlar</h2>
+            <img class="images" src="/img/magnteic.webp" alt="frc shaft encoders">
+            <p class="p">
+                Manyetik encoderlar, şafta hiçbir şekilde mekanik bağlantı gerektirmez; 
+                bunun yerine mile sabitlenmiş bir mıknatısın yönünü izlerler. Manyetik encoderlar
+                temassız yapısı kullanışlı olsa da, mıknatısın encodera göre doğru 
+                konumlandırılmasını sağlamak için genellikle hassas yapı gerektirirler.
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Manyetik Encoder örnekleri:
+            </p>
+            <ul class="p">
+                <li style="margin-left: 2vw;"><a class="a" href="https://store.ctr-electronics.com/srx-mag-encoder/" target="_blank">CTRE Mag Encoder</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.thethriftybot.com/bearings/Thrifty-Absolute-Magnetic-Encoder-p421607500" target="_blank">Thrifty Absolute Magnetic Encoder</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.andymark.com/products/lamprey-absolute-encoder" target="_blank">Team 221 Lamprey2</a></li>
+            </ul>
+        </div>
+        <div id="dortlu">
+            <h2 class="title">Dortlu Encoderlar</h2>
+            <p class="p">
+                "Dörtleme" terimi, hareketin ölçüldüğü/kodlandığı yöntemi ifade eder. Dörtlü bir 
+                encoder, aşağıdaki resimde görüldüğü gibi, birbirinden 90 derece faz dışı olan
+                iki kare dalga darbesi üretir:
+            </p>
+            <img class="images" src="/img/dortlu encoder.webp" alt="FRC quadrate encoder">
+            <p class="p">
+                Böylece, her iki kanalda da dönem başına toplam dört “kenar” (dolayısıyla “dörtlü”) 
+                vardır. İki faz dışı darbenin kullanılması, hangi darbenin diğerine "öncülük ettiği" 
+                hareket yönünün kesin olarak belirlenmesine olanak tanır.
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Her kare dalga darbesi dijital bir sinyal olduğundan, karesel encoderlar roboRIO'daki dijital giriş bağlantı noktalarına bağlanır.
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Dortlu Encoder örnekleri:
+            </p>
+            <ul class="p">
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.cuidevices.com/product/motion-and-control/rotary-encoders/incremental/modular/amt10-v-kit/amt103-v" target="_blank">AMT103-V</a> FIRST Choice aracılığıyla edinilebilir</li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.revrobotics.com/rev-11-1271/" target="_blank">Rev Through Bore Encoder</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://store.ctr-electronics.com/srx-mag-encoder/" target="_blank">CTRE Mag Encoder</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.digikey.com/en/products/detail/63R256/GH3070-ND/304479?WT.z_cid=ref_netcomponents_dkc_buynow&utm_source=netcomponents&utm_medium=aggregator&utm_campaign=buynow" target="_blank">Grayhill 63r</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.andymark.com/products/e4t-oem-miniature-optical-encoder-kit" target="_blank">US Digital E4T</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="title">Dördlü Encoder Kablolaması</h2>
+            <img class="images" src="/img/wiring_quadrate.svg" alt="FRC wiring of quadrate encoders">
+            <p class="p">
+                E4T OEM Minyatür Optik encoder gibi Dörtlü encoderlar yukarıda gösterildiği gibi iki dijital giriş bağlantı noktasına bağlanabilir
+            </p>
+        </div>
+        <div>
+            <h2 class="title">Dizin</h2>
+            <p class="p">
+                Bazı karesel encoderlarda, encoder bir devrimi tamamladığında darbe veren üçüncü bir indeks pimi bulunur.
+            </p>
+        </div>
+        <div>
+            <h2 class="title">Dörtlü Encoder Çözünürlüğü</h2>
+            <p class="p">
+                encoderlar dönüşü dijital darbelerle ölçtüklerinden, ölçümün doğruluğu, belirli bir 
+                dönme hareketi miktarı başına darbe sayısıyla sınırlıdır. Bu, Kodlayicinin 
+                "çözünürlüğü" olarak bilinir ve geleneksel olarak iki farklı yoldan biriyle ölçülür: 
+                devir başına kenarlar veya devir başına döngü
+            </p>
+
+            <p class="p" style="margin-top: 2vw;">
+                Devir başına kenar sayısı, encoder şaftının devri başına her iki kanal boyunca 
+                yüksekten düşüğe veya alçaktan yükseğe geçişlerin toplam sayısını ifade eder. 
+                Tam bir periyod dört kenar içerir.
+            </p>
+
+            <p class="p" style="margin-top: 2vw;">
+                Devir başına döngü, encoder milinin devri başına her iki kanalın toplam tam periyot 
+                sayısını ifade eder . Tam bir periyot bir çevrimdir.
+            </p>
+
+            <p class="p" style="margin-top: 2vw;">
+                Bu nedenle, devir başına kenarlarla ifade edilen çözünürlük, devir başına devirlerle 
+                ifade edilen aynı çözünürlüğün dört katı bir değere sahiptir.
+            </p>
+
+            <p class="p" style="margin-top: 2vw;">
+                Genel olarak Kodlayicininızın devir başına kenar cinsinden çözünürlüğü, konumlandırmada 
+                kabul edilebilir en küçük hatanızdan biraz daha iyi olmalıdır. Bu nedenle, mekanizmayı 
+                artı eksi bir derece bilmek istiyorsanız, devir başına 360 kenardan biraz daha yüksek 
+                çözünürlüğe sahip bir encodera sahip olmalısınız.
+            </p>
+        </div>
+        <div id="gorevdongusu">
+            <h2 class="title">Görev Döngüsü Encoderlar</h2>
+            <img class="images" src="/img/gorev_dongusu.webp" alt="frc shaft encoders">
+            <p class="p">
+                Görev döngüsü encoderları, roboRIO'daki tek bir dijital girişe bağlanır. 
+                Bir darbenin uzunluğunun Kodlayicinin mutlak konumuyla orantılı olduğu bir darbe 
+                üretirler.
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Görev döngüsü Encoder örnekleri:
+            </p>
+            <ul class="p">
+                <li style="margin-left: 2vw;"><a class="a" href="https://store.ctr-electronics.com/srx-mag-encoder/" target="_blank">CTRE Mag Encoder</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.andymark.com/products/am-mag-encoder" target="_blank">AndyMark Mag Encoder</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.andymark.com/products/lamprey-absolute-encoder" target="_blank">Team 221 Lamprey2</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.revrobotics.com/rev-11-1271/" target="_blank">Rev Through Bore Encoder</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.usdigital.com/products/encoders/absolute/shaft/ma3/" target="_blank">US Digital MA3</a></li>
+            </ul>
+        </div>
+        <div id="analog">
+            <h2 class="title">Analog Encoderlar</h2>
+            <img class="images" src="/img/analog.svg" alt="frc shaft encoders">
+            <p class="p">
+                Analog encoderlar roboRIO'daki analog girişe bağlanır. Kodlayicinin mutlak konumuyla orantılı bir voltaj üretirler.
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Analog Encoder örnekleri:
+            </p>
+            <ul class="p">
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.usdigital.com/products/encoders/absolute/shaft/ma3/" target="_blank">Us Digital MA3</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.thethriftybot.com/bearings/Thrifty-Absolute-Magnetic-Encoder-p421607500" target="_blank">Thrifty Absolute Magnetic Encoder</a></li>
+                <li style="margin-left: 2vw;"><a class="a" href="https://www.andymark.com/products/lamprey-absolute-encoder" target="_blank">Team 221 Lamprey2</a></li>
+            </ul>
+        </div>
+        <footer class="hiddeny footer">
+            <img class="footer-img" src="/img/anasayfabuton.avif" alt="team 7611 Logo">
+        </footer>
     </div>
 </body>
 </html>
