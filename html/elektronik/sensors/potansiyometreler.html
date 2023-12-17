@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potansiyometreler - Hardware</title>
+    <link rel="shortcut icon" href="/img/sitelogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <nav class="side-nav">
+        <a href="homepage.html"><img class="side-nav-img" src="/img/anasayfabuton.avif" alt="Amal Hawks Logo"></a>
+        <a class="side-nav-a" href="frc.html">FRC</a>
+        <a class="side-nav-a" href="yazılım.html">Yazılım</a>
+        <a class="side-nav-a" href="mekanik.html">Mekanik</a>
+        <a class="side-nav-a" href="tasarım.html">Tasarım</a>
+        <a class="side-nav-a" href="pnömatik.html">Pnömatik</a>
+        <a class="side-nav-a" href="elektronik.html">Elektronik</a>
+    </nav>
+    <div>
+        <div>
+            <h1 class="title">Potansiyometreler - Hardware</h1>
+        </div>
+        <div>
+            <h2 class="title">Potansiyometrelerin Kablolanmasi</h2>
+            <p class="p">
+                potansiyometreler, roboRIO'nun analog giriş bağlantı noktalarına bağlanır. 
+                Ancak potansiyometrelerin tam olarak nasıl kablolanacağını anlamak için iç 
+                devrelerini anlamak önemlidir.
+            </p>
+            <img class="images" src="/img/Potantiometer.svg" alt="FRC Potentiometers">
+            <p class="p">
+                Soldaki yukarıdaki resim tipik bir potansiyometreyi göstermektedir. 
+                Tıpkı RIO'nun analog girişlerinde olduğu gibi üç pin vardır. Orta pin sinyal pinidir, 
+                dış pinlerin her ikisi de güç veya toprak olabilir.
+            </p>
+                
+            <p class="p" style="margin-top: 2vw;">
+                Daha önce de belirtildiği gibi potansiyometre, sağdaki devre şemasında gösterildiği 
+                gibi bir voltaj bölücüdür. Potansiyometre mili döndükçe R1 ve R2 dirençleri değişir; 
+                ancak toplamları 1 olarak sabit kalır . Böylece, potansiyometrenin tamamındaki voltaj
+                sabit kalır (roboRIO için bu 5 volt olacaktır), ancak sinyal pimi ile voltaj veya 
+                toprak pimi arasındaki voltaj, şaft döndükçe doğrusal olarak değişir.
+            </p>
+
+            <p class="p" style="margin-top: 2vw;">
+                Devre simetrik olduğundan tersinirdir; bu, kullanıcının hareketin hangi ucunda 
+                ölçülen voltajın sıfır ve hangi uçta 5 volt olacağını seçmesine olanak tanır. 
+                Sensörün yönünü tersine çevirmek için basitçe geriye doğru kablolanabilir 
+                Kablolarınızı kontaklara lehimlemeden önce, istenen yönde olduğundan emin olmak 
+                için potansiyometrenizin yönünü bir multimetre ile kontrol ettiğinizden emin olun.
+            </p>
+
+        </div>
+        <footer class="hiddeny footer">
+            <img class="footer-img" src="/img/anasayfabuton.avif" alt="team 7611 Logo">
+        </footer>
+    </div>
+</body>
+</html>

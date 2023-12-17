@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiroskoplar(Gyroscopes)</title>
+    <link rel="shortcut icon" href="/img/sitelogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <nav class="side-nav">
+        <a href="homepage.html"><img class="side-nav-img" src="/img/anasayfabuton.avif" alt="Amal Hawks Logo"></a>
+        <a class="side-nav-a" href="frc.html">FRC</a>
+        <a class="side-nav-a" href="yazılım.html">Yazılım</a>
+        <a class="side-nav-a" href="mekanik.html">Mekanik</a>
+        <a class="side-nav-a" href="tasarım.html">Tasarım</a>
+        <a class="side-nav-a" href="pnömatik.html">Pnömatik</a>
+        <a class="side-nav-a" href="elektronik.html">Elektronik</a>
+    </nav>
+    <div>
+        <div>
+            <h1 class="title">Jiroskoplar - Hardware</h1>
+        <p class="p">
+            Jiroskoplar (veya kısaca "jiros") dönüş hızını ölçen cihazlardır. Bunlar 
+            özellikle robot sürüşünü stabilize etmek veya toplam açısal yer değiştirmenin bir 
+            ölçümünü elde etmek için hız ölçümlerini entegre ederek (toplayarak) yön veya 
+            eğimi ölçmek için kullanışlıdır
+        </p>
+        <p class="p" style="margin-top: 2vw;">
+            IMU'lar (Inertial Measurement Units) olarak bilinen birçok popüler FRC cihazı, 3 eksenli 
+            jiroskopları, ivmeölçerleri ve diğer konum sensörlerini tek bir cihazda birleştirir. 
+            Bazı popüler örnekler şunlardır:
+        </p>
+        <ul class="p" style="margin-top: 2vw;">
+            <li style="margin-left: 2vw;">ADIS16448 ve ADIS16470 IMU</li>
+            <li style="margin-left: 2vw;">CTRE Pigeon IMU</li>
+            <li style="margin-left: 2vw;">Kauai Labs NavX</li>
+        </ul>
+        </div>
+        <div>
+            <h2 class="title">Jiroskop Turleri</h2>
+            <p class="p">
+                FRC'de yaygın olarak kullanılan iki tür Jiroskop vardır: tek eksenli 
+                jiroskoplar, üç eksenli jiroskoplar ve genellikle 3 eksenli bir jiroskop içeren 
+                IMU'lar.
+            </p>
+        </div>
+        <div>
+            <h2 class="title">1 Eksenli jiroskoplar</h2>
+            <img class="images" src="/img/!d Gyro.svg" alt="tek eksenli gyro">
+            <p class="p">
+                Tek eksenli jiroskoplar, adlarından da anlaşılacağı gibi, tek bir eksen 
+                etrafındaki dönüş hızını ölçer. Bu eksen genellikle fiziksel cihaz üzerinde 
+                belirtilir ve cihazın istenen eksenin ölçülebilmesi için doğru yönde monte edilmesi 
+                son derece önemlidir. Bazı tek eksenli jiroskoplar, ölçülen dönüş hızına karşılık 
+                gelen bir analog voltaj çıkışı sağlayabilir ve böylece roboRIO'nun analog giriş 
+                bağlantı noktalarına bağlanabilir. Yukarıdaki resimde görülen ADXRS450 gibi diğer 
+                tek eksenli jiroskoplar bunun yerine roboRIO'daki SPI bağlantı noktasını kullanı
+            </p>
+        </div>
+        <div>
+            <h2 class="title">3 Eksenli jiroskoplar</h2>
+            <img class="images" src="/img/3d Gyro.jpeg" alt="tek eksenli gyro">
+            <p class="p">
+                Üç eksenli jiroskoplar, üç uzaysal eksenin (genellikle x, y ve z olarak etiketlenir) 
+                etrafındaki dönüş hızını ölçer. Bu eksen etrafındaki harekete eğim, sapma ve 
+                yuvarlanma adı verilir.
+            </p>
+            <p class="p" style="margin-top: 2vw;">
+                Son yıllarda FIRST Choice'ta yer alan FIRST Robotics için Analog Devices ADIS16470 
+                IMU Kartı, yaygın olarak kullanılan üç eksenli bir jiroskoptur.
+            </p>
+            <img class="images" src="/img/3axis.svg" alt="3axis">
+            <p class="p" style="margin-top: 2vw;">
+                Çevresel üç eksenli jiroskoplar basitçe üç analog voltajın çıktısını verebilir 
+                ve böylece analog giriş bağlantı noktalarına bağlanabilir veya (daha yaygın olarak) 
+                roboRIO'nun seri veri yollarından biriyle iletişim kurabilirler
+            </p>
+        </div>
+        <footer class="hiddeny footer">
+            <img class="footer-img" src="/img/anasayfabuton.avif" alt="team 7611 Logo">
+        </footer>
+    </div>
+</body>
+</html>

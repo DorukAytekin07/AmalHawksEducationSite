@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yakinlik Anahtarlari(Proximity Switches) - Hardware</title>
+    <link rel="shortcut icon" href="/img/sitelogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <nav class="side-nav">
+        <a href="homepage.html"><img class="side-nav-img" src="/img/anasayfabuton.avif" alt="Amal Hawks Logo"></a>
+        <a class="side-nav-a" href="frc.html">FRC</a>
+        <a class="side-nav-a" href="yazılım.html">Yazılım</a>
+        <a class="side-nav-a" href="mekanik.html">Mekanik</a>
+        <a class="side-nav-a" href="tasarım.html">Tasarım</a>
+        <a class="side-nav-a" href="pnömatik.html">Pnömatik</a>
+        <a class="side-nav-a" href="elektronik.html">Elektronik</a>
+    </nav>
+    <div>
+        <div>
+            <h1 class="title">Yakinlik Anahtarlari - Hardware</h1>
+            <p class="p">Bir robottaki en yaygın algılama görevlerinden biri, 
+                bir nesnenin (bir mekanizma, oyun parçası veya alan öğesi olabilir) 
+                robot üzerinde bilinen bir noktaya belirli bir mesafede olduğunu tespit etmektir. 
+                Bu tür algılama bir "yakınlık anahtarı" ile gerçekleştirilir.
+            </p>
+        </div>
+        <div>
+            <h2 class="title">Yakinlik Anahtarlarinin Calismasi</h2>
+            <p class="p">Yakınlık anahtarları anahtarlardır "açık" durum(devre boyunca bağlantının 
+                olmadığı) ile "kapalı" durum (içinde bağlantının olduğu ) arasında bir devreyi 
+                çalıştırırlar. Böylece yakınlık anahtarları dijital bir sinyal üretir ve buna 
+                göre neredeyse her zaman roboRIO'nun dijital giriş bağlantı noktalarına bağlanırlar.
+                Yakınlık anahtarları, anahtarın etkinleştirilmesinin devreyi kapattığı "normalde açık"
+                veya anahtarın etkinleştirilmesinin devreyi açtığı "normalde kapalı" olabilir. 
+                Bazı anahtarlar aynı anahtara bağlı hem NO hem de NC devresi sunar. Uygulamada, 
+                bir NO ve NC anahtarı arasındaki etkili fark, anahtara giden kabloların arızalanması
+                durumunda sistemin davranışıdır; çünkü bir kablolama arızası neredeyse her zaman 
+                açık devreyle sonuçlanacaktır. NC anahtarları genellikle "daha güvenlidir", 
+                çünkü bir kablolama arızası sistemin anahtara basılmış gibi davranmasına neden olur;
+                anahtarlar genellikle bir mekanizmanın kendisine zarar vermesini önlemek için 
+                kullanıldığından, bu durumda mekanizmanın hasar görmesi olasılığını azaltır. 
+                bir kablolama arızasından.RoboRIO'daki dijital girişler, anahtar açıkken 
+                girişin yüksek (1 değer) olmasını sağlayacak çekme dirençlerine sahiptir, 
+                ancak anahtar kapatıldığında giriş artık toprağa bağlı olduğundan değer 0'a gider.
+            </p>
+        </div>
+        <div>
+            <h2 class="title">Yakinlik Anahtar Turleri</h2>
+            <ul class="p">
+                <li style="margin-left: 3vw;"><a class="a" href="#mekanik">Mekanik Yakinlik Anahtarlari</a></li>
+                <li style="margin-left: 3vw;"><a class="a" href="#manyetik">Manyetik Yakinlik Anahtarlari</a></li>
+                <li style="margin-left: 3vw;"><a class="a" href="#enduktif">Enduktif Yakinlik Anahtarlari</a></li>
+                <li style="margin-left: 3vw;"><a class="a" href="#fotoelektrik">Fotoelektrik Yakinlik Anahtarlari</a></li>
+            </ul>
+        </div>
+        <div id="mekanik">
+            <h2 class="title">Mekanik Yakinlik Anahtarlari(Limit Switches)</h2>
+            <img class="images" src="/img/MYA.svg" alt="Limist Switches">
+            <p class="p">
+                Mekanik yakınlık anahtarları (daha yaygın olarak "limit anahtarları" olarak bilinir),
+                basitlikleri, kullanım kolaylığı ve düşük maliyetleri nedeniyle muhtemelen FRC'de 
+                en yaygın kullanılan yakınlık anahtarıdır. Limit anahtarı oldukça basit bir şekilde,
+                genellikle hareket sınırlarında mekanik bir kola bağlanan bir anahtardır. 
+                Bir nesne anahtar koluna doğru ittiğinde anahtar etkinleştirilir ve anahtar 
+                etkinleştirilir.
+             </p>
+            <p style="margin-top: 2vw;" class="p">
+                Limit anahtarlarının boyutu, anahtar kolunun geometrisi ve anahtarı 
+                etkinleştirmek için gereken "atma" miktarı farklılık gösterir. Limit anahtarları 
+                oldukça ucuz olsa da, mekanik olarak çalıştırılmaları bazen temassız alternatiflere 
+                göre daha az güvenilirdir. Ancak aynı zamanda son derece çok yönlüdürler çünkü 
+                anahtar kolunu hareket ettirebilen herhangi bir fiziksel nesne tarafından 
+                tetiklenebilirler.
+            </p>    
+        </div>
+        <div id="manyetik">
+            <h2 class="title">Manyetik Yakinlik Anahtarlari</h2>
+            <img class="images" src="/img/MYA2.svg" alt="Manyetik Yakinlik Anahtarlari">
+            <p class="p">
+                Manyetik yakınlık anahtarları, bir mıknatıs sensörün belirli bir aralığına geldiğinde
+                etkinleştirilir. Buna göre bunlar “temassız” anahtarlardır; algılanan nesneyle temas gerektirmezler.
+                Manyetik yakınlık anahtarlarının iki ana türü vardır: kamış anahtarlar ve hall etkili 
+                sensörler. Bir kamış anahtarda, manyetik alan bir çift esnek metal kontağın 
+                (“kamışlar”) birbirine temas etmesine ve devrenin kapanmasına neden olur. 
+                Hall etkisi sensörü ise akım taşıyan bir iletken boyunca enine olarak indüklenen 
+                voltajı algılar. Hall etkisi sensörleri genellikle ikisinden daha ucuz ve daha 
+                güvenilirdir. Yukarıdaki resimde West Coast Products'ın Hall efekt sensörü bulunmaktadır.
+             </p>
+            <p style="margin-top: 2vw;" class="p">
+                Manyetik yakınlık anahtarları "tek kutuplu", "iki kutuplu" veya "çok kutuplu" 
+                olabilir. Tek kutuplu bir anahtar, mıknatısın belirli bir kutbunun varlığına bağlı 
+                olarak (anahtara bağlı olarak kuzey veya güney) etkinleşir ve devre dışı kalır. 
+                Bipolar anahtar bir kutbun yakınında etkinleşir ve karşı kutbun yakınında devre dışı 
+                kalır. Çok kutuplu bir anahtar, kutuplardan herhangi birinin varlığında etkinleşecek 
+                ve mıknatıs bulunmadığında devre dışı kalacaktır.Manyetik yakınlık anahtarları 
+                genellikle mekanik benzerlerinden daha güvenilir olsa da, kullanıcının algılanacak 
+                nesnenin üzerine bir mıknatıs monte etmesini gerektirir; bu nedenle çoğunlukla 
+                mekanizma konumunu algılamak için kullanılırlar.
+            </p>    
+        </div>
+        <div id="enduktif">
+            <h2 class="title">Enduktif Yakinlik Anahtarlari</h2>
+            <img class="images" src="/img/EYA.webp" alt="Endüktif Yakınlık Anahtarlari">
+            <p class="p">
+                Endüktif yakınlık anahtarları, sensörün belirli bir aralığına herhangi bir tür 
+                iletken geldiğinde etkinleştirilir. Manyetik yakınlık anahtarları gibi bunlar da 
+                “temassız” anahtarlardır.Endüktif yakınlık anahtarları, manyetik yakınlık 
+                anahtarlarıyla aynı amaçların birçoğu için kullanılır. Bunların daha genel doğası
+                (yalnızca bir mıknatıs yerine herhangi bir iletkenin varlığında etkinleşen), 
+                uygulamanın niteliğine bağlı olarak ya yardımcı ya da engel olabilir.
+            </p>
+        </div>
+        <div id="fotoelektrik">
+            <h2 class="title">Fotoelektrik Yakinlik Anahtarlari</h2>
+            <img class="images" src="/img/FYA.svg" alt="Fotoelektrik Yakınlık Anahtarlari">
+            <p class="p">
+                Fotoelektrik yakınlık anahtarları, FRC'de yaygın olarak kullanılan başka bir temassız 
+                yakınlık anahtarı türüdür. Fotoelektrik yakınlık anahtarları, bir ışık kaynağı 
+                (genellikle bir IR lazer) ve algılanan ışık (sensör hedefinden yansıyan) belirli bir 
+                eşiği aştığında anahtarı etkinleştiren bir fotoelektrik sensör içerir. Böyle bir 
+                sensör, Yukarıda resmi gösterilen IR Engellerden Kaçınma Modülüdür.
+            </p>
+
+            <p style="margin-top: 2vw;" class="p">
+                Fotoelektrik yakınlık anahtarları yansıyan ışığın miktarını ölçmeye dayandığından, 
+                farklı malzemeler arasındaki tetikleme aralıkları genellikle tutarsızdır; buna göre 
+                çoğu fotoelektrik sensörün ayarlanabilir bir aktivasyon noktası vardır 
+                (tipik olarak sensör gövdesi üzerinde herhangi bir yerde bir vidanın döndürülmesiyle 
+                kontrol edilir). Öte yandan fotoelektrik sensörler, diğer temassız anahtar türlerine 
+                göre çok daha çeşitli nesneleri algılayabildiğinden son derece çok yönlüdür.
+            </p> 
+
+            <p style="margin-top: 2vw;" class="p">
+                Fotoelektrik sensörler sıklıkla emitörün sensörden ayrı olduğu "ışın kırılması" 
+                konfigürasyonunda da kullanılır. Bunlar tipik olarak yayıcı ile sensör arasına 
+                bir nesne yerleştirildiğinde etkinleşir. Asagidaki resimde IR LED vericisi ve 
+                IR alıcısı olan bir ışın kırılma sensörü gösterilmektedir.
+            </p>    
+            <img class="images" src="/img/FYA2.svg" alt="Fotoelektrik Yakınlık Anahtarlari">
+        </div>
+        <footer class="hiddeny footer">
+            <img class="footer-img" src="/img/anasayfabuton.avif" alt="team 7611 Logo">
+        </footer>
+    </div>
+    
+</body>
+</html>
